@@ -11,5 +11,6 @@
 
 /* Sharp-edge visual refresh */
 .site-nav .nav-cta,.button,.hero-photo,.route-card,.rider-card,.rider-icon,.feature-photo,.feature-photo figcaption,.check-list li::before,.cta-card,.page-stat,.service-jump,.service-jump a,.service-photo,.service-photo span,.destination-grid span,.contact-direct a,.ride-form,.ride-form input,.ride-form textarea,.ride-form select,.payment-card,.lock,.payment-photo,.payment-photo figcaption{border-radius:2px}
+.alternate .service-photo{border-radius:2px}
 @media (max-width:760px){.hero-photo,.service-photo,.alternate .service-photo,.payment-photo{border-radius:2px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-ticker div{animation:none}.reveal{opacity:1;transform:none;transition:none}.button,.rider-card{transition:none}}
