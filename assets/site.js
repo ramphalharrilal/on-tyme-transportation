@@ -39,7 +39,7 @@ rideForm?.addEventListener('submit', (event) => {
   const formData = new FormData(rideForm);
   const subject = `Ride inquiry from ${formData.get('name') || 'website visitor'}`;
   const body = [
-    'Hello Mrs. Jones,',
+    'Hello Mrs. A. Jones,',
     '',
     'I would like to ask about an ON TYME ride.',
     '',
