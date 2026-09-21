@@ -40,3 +40,15 @@
 /* Team reassurance, based on the owner's stated screening and training practices. */
 .feature-copy .team-assurance{margin:26px 0 0;padding:18px 22px;border-left:4px solid var(--orange);background:rgba(255,255,255,.08);color:#e8eef7;line-height:1.6}
 .team-assurance strong{color:#fff}
+
+/* Customer feedback */
+.reviews-section{background:#f7f9fc}
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.review-card{display:flex;flex-direction:column;min-width:0;margin:0;padding:30px;border-top:4px solid var(--orange);background:#fff;box-shadow:0 14px 40px rgba(11,36,71,.08)}
+.review-mark{height:48px;color:var(--orange);font:700 5rem/.85 Georgia,serif}
+.review-card h3{margin:14px 0 18px;color:var(--navy);font:600 1.45rem/1.15 "Oswald",sans-serif;text-transform:uppercase}
+.review-card blockquote{margin:0 0 24px;color:var(--ink);line-height:1.7}
+.review-card blockquote p{margin:0}
+.review-card figcaption{margin-top:auto;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+@media (max-width:1000px){.review-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:760px){.review-grid{grid-template-columns:1fr}.review-card{padding:25px}}
