@@ -58,3 +58,15 @@ rideForm?.addEventListener('submit', (event) => {
   if (status) status.textContent = 'Opening your email app. Please review the details, then press Send.';
   window.location.href = `mailto:ontymenow@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
+
+document.querySelectorAll('[data-copy]').forEach((button) => {
+  button.addEventListener('click', async () => {
+    const status = button.parentElement?.querySelector('[data-copy-status]');
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy || '');
+      if (status) status.textContent = 'Number copied. Please check the recipient in your banking app.';
+    } catch {
+      if (status) status.textContent = 'Copy is unavailable here. You can enter the number shown above.';
+    }
+  });
+});

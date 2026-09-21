@@ -13,4 +13,26 @@
 .site-nav .nav-cta,.button,.hero-photo,.route-card,.rider-card,.rider-icon,.feature-photo,.feature-photo figcaption,.check-list li::before,.cta-card,.page-stat,.service-jump,.service-jump a,.service-photo,.service-photo span,.destination-grid span,.contact-direct a,.ride-form,.ride-form input,.ride-form textarea,.ride-form select,.payment-card,.lock,.payment-photo,.payment-photo figcaption{border-radius:2px}
 .alternate .service-photo{border-radius:2px}
 @media (max-width:760px){.hero-photo,.service-photo,.alternate .service-photo,.payment-photo{border-radius:2px}}
+
+/* Dedicated payment pages */
+.payment-page-hero .page-hero-grid{align-items:center}
+.payment-hero-note{display:grid;grid-template-columns:42px 1fr;gap:15px 18px;align-items:center;justify-self:end;min-width:300px;padding:29px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06)}
+.payment-hero-note span{display:grid;place-items:center;width:42px;height:42px;background:var(--orange);font:700 1rem "Oswald",sans-serif}
+.payment-hero-note strong{font-size:1rem}
+.pay-methods{background:var(--sky)}
+.pay-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.pay-method{display:flex;flex-direction:column;align-items:flex-start;min-height:420px;padding:40px;background:white;border:1px solid var(--line);box-shadow:0 16px 42px rgba(7,24,47,.07)}
+.pay-method-number{margin-bottom:25px;color:var(--orange);font-size:.76rem;font-weight:800;letter-spacing:.13em}
+.pay-method h3{margin-bottom:14px;font:600 2rem/1.1 "Oswald",sans-serif;text-transform:uppercase;color:var(--navy)}
+.pay-method>p{max-width:38ch;color:var(--muted)}
+.pay-detail{width:100%;margin:auto 0 22px;padding:17px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pay-detail small{display:block;color:var(--muted);font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+.pay-detail strong{display:block;margin-top:4px;color:var(--navy);font-size:clamp(1.15rem,2vw,1.5rem);overflow-wrap:anywhere}
+.copy-status{min-height:1.2em;margin:10px 0 0!important;font-size:.82rem}
+.pay-safety{margin-top:25px;padding:25px 30px;border-left:5px solid var(--orange);background:white}
+.pay-safety strong{display:block;margin-bottom:6px;font:600 1.3rem "Oswald",sans-serif;text-transform:uppercase;color:var(--navy)}
+.pay-safety p{margin:0;color:var(--muted)}
+.pay-safety a{color:var(--navy);font-weight:800}
+@media (max-width:1000px){.payment-hero-note{justify-self:start}.pay-grid{grid-template-columns:1fr}}
+@media (max-width:760px){.payment-hero-note{width:100%;min-width:0}.pay-method{min-height:0;padding:28px 22px}.pay-detail{margin-top:12px}.pay-safety{padding:22px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-ticker div{animation:none}.reveal{opacity:1;transform:none;transition:none}.button,.rider-card{transition:none}}
