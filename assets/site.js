@@ -286,8 +286,8 @@ const englishTitle = document.title;
 const switchButton = document.createElement('button');
 switchButton.type = 'button';
 switchButton.className = 'language-switch';
-switchButton.innerHTML = '<span data-lang="en">EN</span><span aria-hidden="true"> / </span><span data-lang="es">ES</span>';
-menu?.after(switchButton);
+switchButton.innerHTML = '<span class="language-icon" aria-hidden="true">🌐</span><span class="language-label"></span>';
+document.body.append(switchButton);
 
 function localized(original) {
   const clean = original.trim().replace(/\s+/g, ' ');
@@ -301,9 +301,9 @@ function applyLanguage() {
   attributes.forEach(([element, name, original]) => { element.setAttribute(name, siteLanguage === 'es' ? localized(original) : original); });
   document.title = siteLanguage === 'es' ? (spanishCopy[englishTitle] || englishTitle) : englishTitle;
   document.documentElement.lang = siteLanguage;
-  switchButton.querySelectorAll('[data-lang]').forEach((part) => part.classList.toggle('active', part.dataset.lang === siteLanguage));
-  switchButton.setAttribute('aria-label', siteLanguage === 'es' ? 'Cambiar a inglés' : 'Switch to Spanish');
-  switchButton.setAttribute('title', siteLanguage === 'es' ? 'Cambiar a inglés' : 'Switch to Spanish');
+  switchButton.querySelector('.language-label').textContent = siteLanguage === 'es' ? 'English' : 'Español';
+  switchButton.setAttribute('aria-label', siteLanguage === 'es' ? 'Cambiar el sitio a inglés' : 'Switch website to Spanish');
+  switchButton.setAttribute('title', siteLanguage === 'es' ? 'Cambiar el sitio a inglés' : 'Switch website to Spanish');
 }
 
 switchButton.addEventListener('click', () => {
