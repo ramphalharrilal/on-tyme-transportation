@@ -63,3 +63,13 @@
 .language-switch:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(7,24,47,.35)}.language-switch:focus-visible{outline:3px solid var(--navy);outline-offset:3px}.language-icon{font-size:1.15rem;line-height:1}
 @media (max-width:760px){.header-inner{gap:8px}.site-nav{margin-left:0}.language-switch{right:14px;bottom:calc(14px + env(safe-area-inset-bottom));min-height:48px;padding:10px 14px}}
 @media (min-width:761px) and (max-width:880px){.menu-button{display:block}.site-nav{position:absolute;top:88px;left:0;right:0;display:none;flex-direction:column;align-items:stretch;gap:0;margin-left:0;padding:14px;background:white;border-bottom:1px solid var(--line);box-shadow:0 20px 35px rgba(7,24,47,.13)}.site-nav.open{display:flex}.site-nav a{padding:14px 12px}.site-nav .nav-cta{text-align:center;margin-top:5px}}
+
+/* School offer: visible on the home page and qualified on the service page. */
+.school-discount-banner{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 20px;padding:18px 24px;background:var(--navy);color:white;text-align:center;text-decoration:none}
+.school-discount-banner span:first-child{color:var(--orange);font-size:.75rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.school-discount-banner strong{font-size:clamp(1rem,2vw,1.28rem);line-height:1.35}
+.school-discount-banner span:last-child{color:#ffc1a6;font-size:.86rem;font-weight:800;white-space:nowrap}
+.school-discount-banner:hover,.school-discount-banner:focus-visible{background:var(--blue)}
+.school-discount-note{margin:0 0 25px;padding:17px 20px;border-left:4px solid var(--orange);background:var(--orange-soft);color:var(--ink)!important;font-size:.94rem!important;line-height:1.5}
+.school-discount-note strong{color:var(--navy)}
+
