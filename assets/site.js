@@ -106,6 +106,9 @@ const spanishCopy = {
   'Work': 'Trabajo',
   'Shopping': 'Compras',
   'Community Activities': 'Actividades comunitarias',
+  'School families': 'Familias escolares',
+  'School employee and sibling discounts for qualifying bookings': 'Descuentos para empleados escolares y hermanos en viajes que cumplan los requisitos',
+  'Ask us for details →': 'Pregúntenos los detalles →',
   'Built around people': 'Pensado para las personas',
   'A ride should feel dependable from the first call to the final stop.': 'Un viaje debe inspirar confianza desde la primera llamada hasta la última parada.',
   'School transportation is a focus, but it is not all we do. ON TYME also plans rides for college students, seniors, and adults with disabilities across the Houston area.': 'El transporte escolar es una prioridad, pero no es lo único que hacemos. ON TYME también organiza viajes para universitarios, adultos mayores y adultos con discapacidades en el área de Houston.',
@@ -190,6 +193,8 @@ const spanishCopy = {
   'Summer programs and camps': 'Programas de verano y campamentos',
   'Activities and scheduled destinations': 'Actividades y destinos programados',
   'Appointments arranged with a parent or guardian': 'Citas coordinadas con un padre, madre o tutor',
+  'School employee and sibling discounts': 'Descuentos para empleados escolares y hermanos',
+  'Available for qualifying bookings. Ask us about eligibility when planning a ride.': 'Disponibles para viajes que cumplan los requisitos. Pregúntenos sobre los criterios al planificar un viaje.',
   'Ask about a child’s ride': 'Pregunte por un viaje para un niño',
   'School days. Summer days. ON-TYME.': 'Días de clase. Días de verano. Siempre puntual.',
   'A diverse group of college students walking together with backpacks': 'Un grupo diverso de universitarios caminando juntos con mochilas',
@@ -313,3 +318,4 @@ switchButton.addEventListener('click', () => {
 });
 window.getSiteLanguage = () => siteLanguage;
 applyLanguage();
+
